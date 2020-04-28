@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "dependencies": {
+    "@moltin/gatsby-source-moltin": "1.6.2",
+    "@moltin/request": "2.0.2",
+    "algolia-places-react": "1.4.1",
+    "algoliasearch": "3.35.1",
+    "classnames": "2.2.6",
+    "final-form": "4.18.5",
+    "gatsby": "2.13.15",
+    "gatsby-awesome-pagination": "0.3.4",
+    "gatsby-image": "2.2.5",
+    "gatsby-plugin-algolia": "0.3.3",
+    "gatsby-plugin-manifest": "2.2.2",
+    "gatsby-plugin-offline": "2.2.2",
+    "gatsby-plugin-postcss": "2.1.1",
+    "gatsby-plugin-purgecss": "3.1.1",
+    "gatsby-plugin-react-helmet": "3.1.1",
+    "gatsby-plugin-sharp": "2.2.4",
+    "gatsby-plugin-stripe": "1.2.2",
+    "gatsby-source-filesystem": "2.1.4",
+    "gatsby-transformer-sharp": "2.2.2",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-final-form": "4.1.0",
+    "react-helmet": "5.2.1",
+    "react-instantsearch-dom": "5.7.0",
+    "react-social-sharing": "3.0.1",
+    "react-stripe-elements": "4.0.1",
+    "react-toastify": "5.4.0",
+    "tailwindcss": "0.7.4",
+    "validator": "10.11.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "autoprefixer": "9.6.5",
+    "prettier": "1.18.2"
+  }
+}

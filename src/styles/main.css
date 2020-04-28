@@ -1,0 +1,239 @@
+@tailwind preflight;
+@tailwind utilities;
+@tailwind components;
+
+body {
+  @apply bg-white font-sans antialiased leading-normal;
+}
+
+* {
+  transition: all 0.2s ease;
+}
+
+a {
+  @apply text-grey-dark;
+}
+
+a:hover {
+  @apply text-black;
+}
+
+/* Typography */
+
+p {
+  @apply text-grey leading-normal;
+}
+
+.page-title h1::after {
+  @apply bg-grey-light h-px w-16 block mx-auto;
+  content: '';
+}
+
+/* Product */
+
+.product-image:hover img {
+  /* transform: scale(1.05); */
+  transition: all 0.2s ease;
+  /* cursor: zoom-in; */
+}
+
+/* Nav */
+
+.nav-item:first-child {
+  @apply ml-0;
+}
+
+.nav-item {
+  @apply ml-12;
+}
+
+.nav-item > a,
+.nav-item-link {
+  @apply no-underline block text-grey;
+}
+
+.nav-item > a:hover,
+.nav-item-link:hover {
+  @apply text-black;
+}
+
+/* Home */
+
+.hero {
+  @apply bg-grey-light w-screen relative flex items-center;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@screen lg {
+  .hero {
+    min-height: 700px;
+  }
+}
+
+.hero img {
+  transform: scale(2);
+  transform-origin: top;
+}
+
+button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.group:hover .group-hover\:block {
+  display: block !important;
+}
+
+/* Stripe */
+
+.StripeElement {
+  @apply bg-white border border-black px-4 py-3 leading-tight rounded-none;
+}
+
+.StripeElement:hover {
+  @apply border-grey;
+}
+
+/* Algolia Places */
+
+.algolia-places-nostyle {
+  width: 100%;
+}
+
+.ap-nostyle-input {
+  @apply block appearance-none w-full bg-white border border-grey-dark px-4 py-3 leading-tight rounded-none relative;
+}
+
+.ap-nostyle-input::-webkit-input-placeholder {
+  @apply text-black;
+}
+.ap-nostyle-input::-moz-placeholder {
+  @apply text-black;
+}
+.ap-nostyle-input:-ms-input-placeholder {
+  @apply text-black;
+}
+.ap-nostyle-input:-moz-placeholder {
+  @apply text-black;
+}
+
+.ap-nostyle-input:focus {
+  @apply outline-none;
+}
+
+.ap-nostyle-input:hover {
+  @apply border-grey;
+}
+
+.ap-nostyle-icon-pin,
+.ap-nostyle-input-icon,
+.ap-nostyle-suggestion-icon,
+.ap-suggestion-icon {
+  @apply hidden;
+}
+
+.ap-nostyle-dropdown-menu {
+  @apply bg-white border-grey-light mt-3 w-full overflow-hidden shadow-lg text-left flex flex-col;
+}
+
+.ap-nostyle-suggestion,
+.ap-suggestion {
+  @apply px-4 py-3 text-base border-b border-grey-light cursor-pointer;
+}
+
+.ap-nostyle-suggestion em,
+.ap-suggestion em {
+  /* @apply text-black not-italic; */
+  @apply text-black;
+}
+
+.ap-nostyle-cursor,
+.ap-cursor {
+  @apply text-black bg-grey-lightest;
+}
+
+.ap-nostyle-name,
+.ap-name {
+  @apply text-black text-base;
+}
+
+.ap-nostyle-address,
+.ap-address {
+  @apply text-black text-base ml-2;
+}
+
+.ap-footer {
+  @apply flex justify-end items-center px-3 py-4;
+}
+
+.ap-footer a {
+  @apply inline-flex items-center text-grey;
+}
+
+.ap-footer a svg {
+  @apply fill-current;
+}
+
+.ap-footer:hover {
+  @apply text-black;
+}
+
+/* Algolia InstantSearch */
+
+.ais-Hits .ais-Hits-list {
+  @apply flex flex-wrap -mx-5 list-reset;
+}
+
+.ais-Hits .ais-Hits-item {
+  @apply px-5 py-2 w-full;
+}
+
+@screen md {
+  .ais-Hits .ais-Hits-item {
+    @apply p-5;
+  }
+}
+
+@screen lg {
+  .ais-Hits .ais-Hits-item {
+    @apply w-1/2;
+  }
+}
+
+.ais-RefinementList-list {
+  @apply list-reset;
+}
+
+.ais-RefinementList-label {
+  @apply py-2 flex items-center cursor-pointer;
+}
+
+.ais-RefinementList-item {
+  @apply text-grey;
+}
+
+.ais-RefinementList-item.ais-RefinementList-item--selected {
+  @apply text-black;
+}
+
+.ais-RefinementList-checkbox {
+  @apply mr-3;
+}
+
+.ais-RefinementList-count {
+  @apply ml-auto text-grey-lighter text-xs;
+}
+
+.ais-PoweredBy {
+  @apply inline-flex items-center;
+}
+
+.ais-PoweredBy-text {
+  @apply mr-3 text-sm text-grey leading-none;
+}
+
+.ais-PoweredBy-link {
+  @apply flex;
+}
